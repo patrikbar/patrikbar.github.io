@@ -1,0 +1,42 @@
+.col {
+    text-align: center;
+    position: relative;
+}
+
+#button {
+    background-color: white;
+    border: none;
+    color: #555555;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+#button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.sredina {
+    text-align: center;
+}
+
+#informacije #obvestilo {
+    font-size: 40px;
+    font-style: italic;
+}
+
+#input {
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    font-size: medium;
+}
+
+#main {
+    transition: background 2s;
+}
