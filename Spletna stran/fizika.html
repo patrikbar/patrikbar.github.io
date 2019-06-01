@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>Moja spletna stran</title>
+    <meta name="description" content="opis strani">
+    <meta name="keywords" content="ključne besede, besede">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  </head>
+  <body onload="goforit()">
+    <div id="main">
+      <header>
+        <div id="logo">
+          <div id="logo_text">
+            <h1><a href="index.html"><span class="logo_colour"><strong>Projektna naloga</strong></span><br>
+              </a></h1>
+            <h2>Moja spletna stran</h2>
+            <script>
+var dayarray=new Array("Nedelja","Ponedeljek","Torek","Sreda","Četrtek","Petek","Sobota")
+var montharray=new Array("Januar","Februar","Marec","April","Maj","Junij","Julij","August","September","Oktober","November","December")
+
+function getthedate(){
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var hours=mydate.getHours()
+var minutes=mydate.getMinutes()
+var seconds=mydate.getSeconds()
+var dn=""
+if (hours>=24)
+{
+hours=hours-24
+}
+if (hours==0)
+hours=24
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+//change font size here
+var cdate="<medium><font color='999990' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+" "+hours+":"+minutes+":"+seconds+" "+dn
++"</b></font></small>"
+if (document.all)
+document.all.clock.innerHTML=cdate
+else if (document.getElementById)
+document.getElementById("clock").innerHTML=cdate
+else
+document.write(cdate)
+}
+if (!document.all&&!document.getElementById)
+getthedate()
+function goforit(){
+if (document.all||document.getElementById)
+setInterval("getthedate()",1000)
+}
+
+</script><span id="clock"></span>&nbsp;
+            <script language="JavaScript1.2"></script></div>
+        </div>
+        <div style="text-align: right;"><!-- end of clock --></div>
+        <nav>
+          <div id="menu_container">
+            <ul class="sf-menu" id="nav">
+              <li><a href="index.html">O meni</a></li>
+              <li><a href="matematika.html">Matematika</a></li>
+              <li><a href="fizika.html">Fizika</a></li>
+              <li><a href="cifra.html">Ugani cifro</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div id="site_content">
+        <div id="sidebar_container">
+          <div class="sidebar">
+            <h3><span style="color: #3366ff;"><span style="color: #993300;"><span
+
+                    style="font-weight: bold;">Novice</span></span></span></h3>
+            <h4><b>Migranti v vinogradu ugrabili upokojenca</b><br>
+            </h4>
+            <h5><span class="auto-style1"></span><span style="color: #990000;"> 
+			Maj 2019<br>
+              </span></h5>
+            <p><span class="auto-style2"></span><span style="color: yellow;"><a target="_blank" href="https://www.24ur.com/novice/slovenija/civilna-iniciativa-po-ugrabitvi-napoveduje-protest-zelimo-se-pocutiti-varne.html">Povezava 
+			na članek 24ur.</a><br>
+              </span></p>
+          </div>          <div class="sidebar">
+            <h3><span style="color: #3366ff;"><span style="color: #993300; font-weight: bold;">Youtube
+                  kanali</span><br>
+              </span></h3>
+            <span style="color: yellow;"> </span>
+            <ul>
+              <li><span style="color: yellow;"><a target="_blank" href="http://www.youtube.com/user/TEDEducation"><span
+
+                      style="color: yellow;">Teded</span><br>
+                  </a></span></li>
+              <span style="color: yellow;"> </span>
+              <li><span style="color: yellow;"><a target="_blank" href="http://www.youtube.com/user/Vsauce2"><span
+
+                      style="color: yellow;">Vsauce2</span></a><span style="text-decoration: underline;"><a
+
+                      target="_blank" href="http://www.youtube.com/user/Vsauce2"><br>
+                    </a></span></span></li>
+              <span style="color: yellow;"><span style="text-decoration: underline;">
+                </span></span>
+              <li><span style="color: yellow;"><a target="_blank" href="http://www.youtube.com/user/Vsauce3"><span
+
+                      style="color: yellow;">Vsauce3</span></a><span style="text-decoration: underline;"><a
+
+                      target="_blank" href="http://www.youtube.com/user/Vsauce3"><br>
+                    </a></span></span></li>
+              <span style="color: yellow;"><span style="text-decoration: underline;">
+                </span></span>
+              <li><a target="_blank" href="https://www.youtube.com/user/MinuteEarth"><span
+
+                    style="color: yellow;"><span style="color: #222222;"><span style="color: yellow;">MinuteEarth</span></span></span></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/user/Vsauce"><span
+
+                    style="color: yellow;">Vsauce</span></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/user/Numberphile"><span
+
+                    style="color: yellow;"><span style="color: #222222;"><span style="color: yellow;">Numberphile</span></span></span></a></li>
+              <li><span style="color: yellow;"><a target="_blank" href="https://www.youtube.com/user/minutephysics"><span
+
+                      style="color: #fdfd00;">MinutePhysics</span></a><br>
+                </span> </li>
+            </ul>
+            <ul>
+            </ul>
+            <span style="color: yellow;"> </span></div>
+          <span style="color: yellow;"> </span>
+          <div class="sidebar"><span style="color: yellow;"> </span>
+            <h3><span style="color: #993300;"><span style="font-weight: bold;">Drugo<br>
+                </span></span></h3>
+            <ul>
+              <li> <a target="_blank" href="http://www.ostrbovlje.si/v2/"><span
+
+                    style="color: #fdfd00;">Moja šola</span></a></li>
+              <li><span style=" color: yellow;"><a target="_blank" href="https://en.wikipedia.org"><span
+
+                      style="color: #fdfd00;">Wikipedija</span></a></span></li>
+              <li><span style="  color: yellow;"><span style=" color: #fdfd00;"><a
+
+                      target="_top" href="poezave.html"><span style="color: yellow;">Povezave</span></a><br>
+                  </span></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="content">
+          <h1><span style="color: #ff6666;">Fizika</span></h1>
+          <span style="color: #ff6666;">
+            Fízika starogrško pomeni poznavanje narave; phúsis – narava. Je naravoslovna veda, ki vključuje proučevanje snovi 
+            in njeno gibanje v prostoru in času, skupaj s povezanimi pojmi kot sta energija in sila. V najširšem pomenu je 
+            to veda o naravi prikazana na način, ki omogoča razumevanje obnašanja vesolja.
+            
+            <br><br>
+            
+			Fizika je ena izmed najstarejših akademskih disciplin, verjetno celo najstarejša zaradi vključene astronomije. 
+			Zadnjih dva tisoč let je bila fizika del naravoslovja skupaj s kemijo, določenimi vejami matematike in biologije, 
+			toda med znanstveno revolucijo v 17.-tem stoletju so se v naravoslovju začeli razvijati samostojni raziskovalni programi. 
+			Fizika je povezana z interdisciplinarnimi vedami kot sta biofizika in kvantna kemija, ampak ločnice med njimi niso strogo določene.            
+            
+            <br><br>
+
+			Fizika pomembno prispeva pri razvoju novih tehnologij. Na primer, napredek v razumevanju elektromagnetizma ali jedrske fizike 
+			je neposredno privedel do razvoja novih izdelkov, ki so bistveno preoblikovali sodobno družbo, kot so televizija, 
+			računalniki, gospodinjski aparati, in jedrsko orožje; napredek na področju termodinamike je privedel do razvoja 
+			industrializacije in na področju mehanike je napredek navdihnil razvoj infinitezimalnega računa.
+			            
+          	</span>
+</div>
+      </div>
+      <footer>
+        <p>Copyright © Patrik
+		</p>
+      </footer>
+    </div>
+    <p>&nbsp;</p>
+    <!-- javascript at the bottom for fast page loading -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+    <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+  </body>
+</html>
